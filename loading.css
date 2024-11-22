@@ -1,0 +1,351 @@
+body {
+  overflow: hidden;
+}
+
+
+/* Styles communs */
+.common {
+  height: 5vw;
+  max-height: 100%;
+  overflow: auto;
+  width: 2vw;
+  margin: auto;
+  max-width: 100%;
+  position: absolute;
+  border-radius: 0vw 10vw 0vw 10vw;
+  box-shadow: inset 0vw 0vw 0vw .1vw #E645D0, 0vw 0vw 1.5vw 0vw #E645D0;
+}
+
+/* Animations */
+
+@keyframes one {
+  0%,
+  100% {}
+  50% {
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+@keyframes two {
+  0%,
+  100% {}
+  50% {
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+@keyframes three {
+  0%,
+  100% {}
+  50% {
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+@keyframes four {
+  0%,
+  100% {}
+  50% {
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+@keyframes five {
+  0%,
+  100% {}
+  50% {
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+@keyframes six {
+  0%,
+  100% {}
+  50% {
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+@keyframes seven {
+  0%,
+  100% {}
+  50% {
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+@keyframes eight {
+  0%,
+  100% {}
+  50% {
+    box-shadow: inset 0vw 0vw 0vw .1vw #17E1E6, 0vw 0vw 1.5vw 0vw #17E1E6;
+  }
+}
+
+@keyframes container {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes progress {
+  0% {
+    left: -24vw;
+  }
+  10% {
+    left: -20vw;
+  }
+  30% {
+    left: -16vw;
+  }
+  50% {
+    left: -12vw;
+  }
+  65% {
+    left: -10vw;
+  }
+  80% {
+    left: -4vw;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+
+/* Conteneur principal */
+.container {
+  width: 20vw;
+  height: 30vw;
+  margin: auto;
+  margin-top: 8%;
+  position: relative;
+  left: -28%;
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Styles pour chaque élément */
+.one {
+  transform: rotate(45deg);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 7.5vw;
+}
+
+.two {
+  transform: rotate(90deg);
+  left: 5.5vw;
+  right: 0;
+  top: 0;
+  bottom: 5.5vw;
+}
+
+.three {
+  transform: rotate(135deg);
+  left: 7.5vw;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.four {
+  transform: rotate(180deg);
+  left: 5.5vw;
+  right: 0;
+  top: 5.5vw;
+  bottom: 0;
+}
+
+.five {
+  transform: rotate(225deg);
+  left: 0;
+  right: 0;
+  top: 7.5vw;
+  bottom: 0;
+}
+
+.six {
+  transform: rotate(270deg);
+  left: 0;
+  right: 5.5vw;
+  top: 5.5vw;
+  bottom: 0;
+}
+
+.seven {
+  transform: rotate(315deg);
+  left: 0;
+  right: 7.5vw;
+  top: 0;
+  bottom: 0;
+}
+
+.eight {
+  transform: rotate(360deg);
+  left: 0;
+  right: 5.5vw;
+  top: 0;
+  bottom: 5.5vw;
+}
+
+.progress {
+  width: 12vw;
+  height: .5vw;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  overflow: hidden;
+  background: #17E1E6;
+}
+
+.one {
+  animation: one 1s ease infinite;
+  -moz-animation: one 1s ease infinite;
+  /* Firefox */
+  -webkit-animation: one 1s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: one 1s ease infinite;
+  /* Opera */
+}
+
+.two {
+  animation: two 1s .125s ease infinite;
+  -moz-animation: two 1s .125s ease infinite;
+  /* Firefox */
+  -webkit-animation: two 1s .125s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: two 1s .125s ease infinite;
+  /* Opera */
+}
+
+.three {
+  animation: three 1s .25s ease infinite;
+  -moz-animation: three 1s .25s ease infinite;
+  /* Firefox */
+  -webkit-animation: three 1s .25s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: three 1s .25s ease infinite;
+  /* Opera */
+}
+
+.four {
+  animation: four 1s .375s ease infinite;
+  -moz-animation: four 1s .375s ease infinite;
+  /* Firefox */
+  -webkit-animation: four 1s .375s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: four 1s .375s ease infinite;
+  /* Opera */
+}
+
+.five {
+  animation: five 1s .5s ease infinite;
+  -moz-animation: five 1s .5s ease infinite;
+  /* Firefox */
+  -webkit-animation: five 1s .5s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: five 1s .5s ease infinite;
+  /* Opera */
+}
+
+.six {
+  animation: six 1s .625s ease infinite;
+  -moz-animation: six 1s .625s ease infinite;
+  /* Firefox */
+  -webkit-animation: six 1s .625s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: six 1s .625s ease infinite;
+  /* Opera */
+}
+
+.seven {
+  animation: seven 1s .750s ease infinite;
+  -moz-animation: seven 1s .750s ease infinite;
+  /* Firefox */
+  -webkit-animation: seven 1s .750s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: seven 1s .750s ease infinite;
+  /* Opera */
+}
+
+.eight {
+  animation: eight 1s .875s ease infinite;
+  -moz-animation: eight 1s .875s ease infinite;
+  /* Firefox */
+  -webkit-animation: eight 1s .875s ease infinite;
+  /* Safari and Chrome */
+  -o-animation: eight 1s .875s ease infinite;
+  /* Opera */
+}
+
+.container {
+  animation: container 5s linear infinite;
+  -moz-animation: container 5s linear infinite;
+  /* Firefox */
+  -webkit-animation: container 5s linear infinite;
+  /* Safari and Chrome */
+  -o-animation: container 5s linear infinite;
+  /* Opera */
+}
+
+/* Styles spécifiques pour les écrans plus petits */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 70vw;  /* Ajustez la largeur en fonction de vos besoins */
+    height: 160vw;  /* Ajustez la hauteur en fonction de vos besoins */
+    left: 0;
+  }
+}
+
+/* Styles spécifiques pour les écrans très petits */
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 100vw;  /* Ajustez la largeur en fonction de vos besoins */
+    height: 207vw;  /* Ajustez la hauteur en fonction de vos besoins */
+    left: 0;
+  }
+}
+
+/* Styles spécifiques pour les écrans très petits */
+@media only screen and (max-width: 321px) {
+  .container {
+    width: 100vw;  /* Ajustez la largeur en fonction de vos besoins */
+    height: 240vw;  /* Ajustez la hauteur en fonction de vos besoins */
+    left: 0;
+  }
+}
+
+/* Styles spécifiques pour les écrans très petits */
+@media only screen and (max-width: 153px) {
+  .container {
+    width: 100vw;  /* Ajustez la largeur en fonction de vos besoins */
+    height: 650vw;  /* Ajustez la hauteur en fonction de vos besoins */
+    left: 0;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .container {
+    width: 100vw;  /* Ajustez la largeur en fonction de vos besoins */
+    height: 24vw;  /* Ajustez la hauteur en fonction de vos besoins */
+    left: -15px;
+  }
+}
+
+/* Styles spécifiques pour les écrans de taille moyenne */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 30vw;  /* Ajustez la largeur en fonction de vos besoins */
+    height: 60vw;  /* Ajustez la hauteur en fonction de vos besoins */
+  }
+}
